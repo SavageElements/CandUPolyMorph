@@ -6,10 +6,8 @@ namespace CandUPolyMorph
     {
         static void Main(string[] args)
         {
-            Employee employee = new Employee();
-            employee.ID = 3456;
-
-            employee.Quit();
+            IQuit quitter = new Employee();
+            quitter.Quit();
         }
     }
 }
